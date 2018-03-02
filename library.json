@@ -1,0 +1,18 @@
+{
+    "name": "ADS123X",
+    "keywords": "ADS123X, scale, weight",
+    "description": "Library for reading from an ADS1232 and ADS1234 MultiChannel 24-bit ADC For Bridge Sensors.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/HamidSaffari/ADS123X.git"
+    },
+    "version": "0.1",
+    "exclude": "tests",
+    "examples": "examples/*/*.ino",
+    "frameworks": "arduino",
+    "platforms": [
+        "atmelavr",
+        "espressif",
+		"STM32"
+    ]
+}
