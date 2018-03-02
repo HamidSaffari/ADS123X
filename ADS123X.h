@@ -1,6 +1,6 @@
 /*
-  ADS123X.h - Library for reading from a ADS1232 and ADS1234 24-bit ADC.
-  Created by Hamid Saffari @ Jan 2018. Hamidsaffari@yahoo.com
+  ADS123X.h - Library for reading from an ADS1232 and ADS1234 24-bit ADC.
+  Created by Hamid Saffari @ Jan 2018.
   Released into the public domain.
   
   based on these great libraries:
