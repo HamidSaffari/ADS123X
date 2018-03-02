@@ -1,5 +1,5 @@
 /*
-  ADS123X.cpp - Library for reading from a ADS1232 and ADS1234 24-bit ADC.
+  ADS123X.cpp - Library for reading from an ADS1232 and ADS1234 24-bit ADC.
   Created by Hamid Saffari @ Jan 2018.
   Released into the public domain.
   
