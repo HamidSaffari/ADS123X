@@ -4,6 +4,6 @@ Created by Hamid Saffari @ Jan 2018. Hamidsaffari@yahoo.com
 Released into the public domain.
   
 based on these great libraries:
-HX711: by bodge -> https://github.com/bogde/HX711
+HX711: by bodge -> https://github.com/bogde/HX711 
 ADS1232: by Jeffrey M. Kubascik -> https://github.com/jeffkub/beer-gauge/tree/master/firmware/beer-gauge
   
