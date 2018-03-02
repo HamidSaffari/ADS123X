@@ -1,5 +1,5 @@
 # ADS123X
-Library for reading from a ADS1232 and ADS1234 MultiChannel 24-bit ADC For Bridge Sensors.
+Library for reading from an ADS1232 and ADS1234 MultiChannel 24-bit ADC For Bridge Sensors.
   
 based on these great libraries:
 
