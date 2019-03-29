@@ -1,6 +1,14 @@
 # ADS123X
 Library for reading from Texas Instruments ADS1232 and ADS1234 MultiChannel 24-bit ADC For Bridge Sensors.
 
+with all the features mentioned in the datasheet like Offset-Calibrating and Temperature Sensor (ADS1232) reading. 
+
+Offset calibration can minimize Input Offset Error errors to the level of noise at any temperature.
+
+one function example:
+  ERROR_t get_units(Channel channel, float& value, byte times = 1, bool Calibrating = false);
+
+
 Some settings and defines:
 
 //=================== which one? ===============
