@@ -3,12 +3,12 @@ Library for reading from Texas Instruments ADS1232 and ADS1234 MultiChannel 24-b
 
 Some settings and defines:
 
-//================ which one? ===============
+//=================== which one? ===============
 
 //#define ADS1232
-
 #define ADS1234
-//============================================
+
+//===============================================
 
 typedef enum ERROR_t {
 
