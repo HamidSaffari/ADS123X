@@ -4,21 +4,21 @@ Library for reading from Texas Instruments ADS1232 and ADS1234 MultiChannel 24-b
 Some settings and defines:
 
 //======================== which one? ========================
+
 //#define ADS1232
+
 #define ADS1234
+
 //============================================================
+
 
 typedef enum ERROR_t {
 	NoERROR,
 	
 	TIMEOUT_HIGH,     // Timeout waiting for HIGH
-	
 	TIMEOUT_LOW,      // Timeout waiting for LOW
-	
 	WOULD_BLOCK,      // weight not measured, measuring takes too long
-	
 	STABLE_TIMEOUT,   // weight not stable within timeout
-	
 	DIVIDED_by_ZERO   
 	
 };
