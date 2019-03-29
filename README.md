@@ -4,11 +4,13 @@ Library for reading from Texas Instruments ADS1232 and ADS1234 MultiChannel 24-b
 Some settings and defines:
 
 //======================== which one? ========================
+
 //#define ADS1232
 #define ADS1234
 //============================================================
 
 typedef enum ERROR_t {
+
 	NoERROR,
 	TIMEOUT_HIGH,     // Timeout waiting for HIGH
 	TIMEOUT_LOW,      // Timeout waiting for LOW
@@ -18,6 +20,7 @@ typedef enum ERROR_t {
 	};
 
 typedef enum Gain{
+
 	GAIN1 = 1,
 	GAIN2,
 	GAIN64,
@@ -25,11 +28,13 @@ typedef enum Gain{
 	};
 
 typedef enum Speed{
+
         SLOW = 0,
 	FAST
 	};
 
 typedef enum Channel{
+
         AIN1 = 1,
 	AIN2 = 2,
   #if defined ADS1232
