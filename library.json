@@ -1,0 +1,20 @@
+{
+    "name": "ADS123X",
+    "keywords": "ADS123X, ADS1232, ADS1234, scale, weight",
+    "description": "An Arduino library to interface the ADS1232 and ADS1234 MultiChannel 24-Bit Analog-to-Digital Converter For Bridge Sensors.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/HamidSaffari/ADS123X"
+    },
+    "version": "0.2",
+    "exclude": "tests",
+    "examples": "examples/*/*.ino",
+    "frameworks": "arduino",
+    "platforms": [
+        "atmelavr",
+        "espressif8266",
+        "espressif32",
+        "atmelsam",
+        "ststm32"
+    ]
+}
