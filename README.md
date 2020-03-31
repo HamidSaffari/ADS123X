@@ -59,7 +59,7 @@ typedef enum Channel{
 
 =================================================================
 
-based on these great libraries:
+based on these libraries:
 
 HX711: by bodge -> https://github.com/bogde/HX711 
 
