@@ -4,7 +4,7 @@
   Created by Hamid Saffari @ Jan 2018. https://github.com/HamidSaffari/ADS123X
   Released into the public domain.
   
-  based on these great libraries:
+  based on these libraries:
   HX711: by bodge -> https://github.com/bogde/HX711
   ADS1232: by Jeffrey M. Kubascik -> https://github.com/jeffkub/beer-gauge/tree/master/firmware/beer-gauge
   
