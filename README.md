@@ -1,5 +1,5 @@
 # ADS123X
-Library for reading from Texas Instruments ADS1232 and ADS1234 MultiChannel 24-bit ADC For Bridge Sensors.
+A Non-blocking Library for reading from Texas Instruments ADS1232 and ADS1234 MultiChannel 24-bit ADC For Bridge Sensors.
 
 with all the features mentioned in the datasheet like Offset-Calibrating and Temperature Sensor (ADS1232) reading. 
 
