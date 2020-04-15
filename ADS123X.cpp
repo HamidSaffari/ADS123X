@@ -4,11 +4,11 @@
   Created by Hamid Saffari @ Jan 2018. https://github.com/HamidSaffari/ADS123X
   Released into the public domain.
   
-  based on these libraries:
+  based on these great libraries:
   HX711: by bodge -> https://github.com/bogde/HX711
   ADS1232: by Jeffrey M. Kubascik -> https://github.com/jeffkub/beer-gauge/tree/master/firmware/beer-gauge
-   
 */
+
 #include "ADS123X.h"
 
 #if ARDUINO_VERSION <= 106
@@ -173,7 +173,7 @@ ERROR_t ADS123X::read(Channel channel,long& value, bool Calibrating)
     unsigned long start;
 	unsigned int waitingTime;
 	unsigned int SettlingTimeAfterChangeChannel=0;
-	
+
 	if(channel!=lastChannel){
 		setChannel(channel);
 		
@@ -198,20 +198,22 @@ ERROR_t ADS123X::read(Channel channel,long& value, bool Calibrating)
 		else waitingTime=150;
 	}
 	waitingTime+=SettlingTimeAfterChangeChannel;
+
+	waitingTime+=600; //[ms] Add some extra time ( sometimes takes longer than what datasheet claims! )
 	
     start=millis();
     while(digitalRead(_pin_DOUT) != HIGH)
     {
-        if(millis() > start+waitingTime)
+        if(millis()-start > waitingTime)
             return TIMEOUT_HIGH; // Timeout waiting for HIGH
     }
+
     start=millis();
     while(digitalRead(_pin_DOUT) != LOW)
     {
-        if(millis() > start+waitingTime)
+        if(millis()-start > waitingTime)
             return TIMEOUT_LOW; // Timeout waiting for LOW
     }
-    //ads1231_last_millis = millis();
 
     // Read 24 bits
     for(i=23 ; i >= 0; i--) {
@@ -243,15 +245,15 @@ ERROR_t ADS123X::read(Channel channel,long& value, bool Calibrating)
 		digitalWrite(_pin_SCLK, HIGH);
 		digitalWrite(_pin_SCLK, LOW);
 	}
-
     return NoERROR; // Success
 }
 
 ERROR_t ADS123X::read_average(Channel channel, float& value, byte times, bool Calibrating) {
-	long val = 0;
+
 	long sum = 0;
 	ERROR_t err;
 	for (byte i = 0; i < times; i++) {
+		long val;
 		err = read(channel, val, Calibrating);
 		if(err!=NoERROR) return err;
 		
@@ -260,7 +262,7 @@ ERROR_t ADS123X::read_average(Channel channel, float& value, byte times, bool Ca
 
 	}
 	if(times==0) return DIVIDED_by_ZERO;
-	value = sum / times;
+	value = (float)sum / times;
 	return NoERROR;
 }
 
