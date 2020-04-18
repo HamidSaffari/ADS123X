@@ -3,11 +3,6 @@
   ADS123X.h - Library for reading from an ADS1232 and ADS1234 24-bit ADC.
   Created by Hamid Saffari @ Jan 2018. https://github.com/HamidSaffari/ADS123X
   Released into the public domain.
-  
-  based on these great libraries:
-  HX711: by bodge -> https://github.com/bogde/HX711
-  ADS1232: by Jeffrey M. Kubascik -> https://github.com/jeffkub/beer-gauge/tree/master/firmware/beer-gauge
-  
 */
 #ifndef ADS123X_h
 #define ADS123X_h
