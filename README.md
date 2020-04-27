@@ -10,7 +10,7 @@ one function example:
 
 
 Some settings and defines:
-
+```C++
 //=================== which one? ===============
 
 //#define ADS1232
@@ -56,9 +56,7 @@ typedef enum Channel{
 	AIN4 = 4
   #endif
 };
-
-=================================================================
-
+`
 based on these libraries:
 
 HX711: by bodge -> https://github.com/bogde/HX711 
